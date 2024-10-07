@@ -62,7 +62,7 @@ RUN chmod +x /usr/local/bin/change_owner.sh
 USER vsuser
 
 # Execute the change_owner script
-ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/change_owner.sh && exec bash"]
+ENTRYPOINT ["/usr/local/bin/change_owner.sh"]
 
 # Print Welcome on Screen (optional)
 CMD [ "echo Welcome" ]

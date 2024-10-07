@@ -17,3 +17,5 @@ fi
 
 # Print success message
 echo "Ownership changed to vsuser:containergroup"
+
+tail -f /dev/null
